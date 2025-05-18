@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://rm-cn-ce749iqw80001qfo.rwlb.rds.aliyuncs.com/the-ai-agent
+    username: my_user
+    password: +20250516Fri
+  application:
+    name: the-ai-agent
+  ai:
+    dashscope:
+      api-key: sk-e7481e650e9a4723bd1087db63011fd1
+      chat:
+        options:
+
+          model: qwen-plus
+
+
