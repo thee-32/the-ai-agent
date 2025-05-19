@@ -76,11 +76,27 @@ class LoveAppTest {
 
     }
 
+    /**
+     * 用于工具调用
+     * @param message
+     */
     private void testMessage(String message) {
 
         String chatId = UUID.randomUUID().toString();
 
         String answer = loveApp.doChatWithTools(message, chatId);
+        Assertions.assertNotNull(answer);
+    }
+
+
+    @Test
+    void doChatWithMCP() {
+        String chatId = UUID.randomUUID().toString();
+
+        String message = "我的另一半住在深圳市南山区，请给出一个合适约会的地点";
+        String message2 = " 帮我搜索一些手机照片";
+
+        String answer = loveApp.doChatWithMCP(message2, chatId);
         Assertions.assertNotNull(answer);
     }
 

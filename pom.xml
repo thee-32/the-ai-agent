@@ -59,6 +59,15 @@
             <version>1.20.1</version>
         </dependency>
 
+        <!-- mcp -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.ai/spring-ai-client-chat -->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-client-chat</artifactId>
+            <version>1.0.0-M7</version>
+        </dependency>
+
+
         <!-- pdf 生成-->
 
         <!-- https://mvnrepository.com/artifact/com.itextpdf/itext-core -->
