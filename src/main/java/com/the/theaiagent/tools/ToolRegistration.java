@@ -12,6 +12,8 @@ public class ToolRegistration {
     @Value("{search-api.api-key}")
     private String apiKey;
 
+
+
     @Bean
     public ToolCallback[] allTools() {
         FileOperationTool fileOperationTool = new FileOperationTool();
@@ -20,15 +22,17 @@ public class ToolRegistration {
         TerminalOperationTool terminalOperationTool = new TerminalOperationTool();
         WebScrapingTool webScrapingTool = new WebScrapingTool();
         WebSearchTool webSearchTool = new WebSearchTool(this.apiKey);
-
+        TerminateTool terminateTool = new TerminateTool();
         return ToolCallbacks.from(
                 fileOperationTool,
                 pdfGenerationTool,
                 resourceDownloadTool,
                 terminalOperationTool,
                 webScrapingTool,
-                webSearchTool
+                webSearchTool,
+                terminateTool
         );
 
     }
+
 }

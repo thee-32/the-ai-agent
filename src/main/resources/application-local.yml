@@ -12,5 +12,9 @@ spring:
         options:
 
           model: qwen-plus
+    # searchApi
+    search-api:
+      api-key: M6ZGw3cRsVwiYJ5K1jfE2KzC
+
 
 
